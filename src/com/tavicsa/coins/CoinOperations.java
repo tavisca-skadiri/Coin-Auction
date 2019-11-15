@@ -6,12 +6,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class CoinCollection {
+public class CoinOperations {
     private List<Coin> coins = new ArrayList<>();
-
-    void add(Coin coin) {
-        coins.add(coin);
-    }
 
     public List<Coin> getCoins() {
         return coins;
@@ -66,5 +62,4 @@ public class CoinCollection {
                 .filter(coin -> coin.getCountry().equals(countryName) && coin.getAcquiredDate().equals(acquiredDate))
                 .collect(Collectors.toList());
     }
-
 }

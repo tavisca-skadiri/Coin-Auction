@@ -76,13 +76,13 @@ public class Main {
 
     private static Seller selectSeller(int choice) {
         if (choice == 1) {
-            CoinCollection coinCollection = new CoinCollection();
+            CoinOperations coinCollection = new CoinOperations();
             coinCollection.add(new Coin("India", 100, 2014, 100, "12/12/2010"));
             coinCollection.add(new Coin("USA", 125, 2010, 125, "12/12/2011"));
             coinCollection.add(new Coin("India", 75, 2012, 75, "12/12/2012"));
             return new Seller("Saqlain", coinCollection);
         } else {
-            CoinCollection coinCollection = new CoinCollection();
+            CoinOperations coinCollection = new CoinOperations();
             coinCollection.add(new Coin("USA", 125, 2010, 125, "12/12/2011"));
             coinCollection.add(new Coin("India", 75, 2012, 75, "12/12/2012"));
             coinCollection.add(new Coin("USA", 100, 2010, 100, "12/12/2010"));
