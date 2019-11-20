@@ -1,13 +1,12 @@
-package com.tavicsa.coins;
+package com.tavicsa.coins.seller;
+
+import com.tavicsa.coins.Coin;
 
 import java.util.List;
 
 public class Seller {
     private String name;
     private List<Coin> coinCollection;
-
-    public Seller() {
-    }
 
     public Seller(String name, List<Coin> coinCollection) {
         this.name = name;
@@ -26,15 +25,8 @@ public class Seller {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public List<Coin> getCoinCollection() {
         return coinCollection;
     }
 
-    public void setCoinCollection(List<Coin> coinCollection) {
-        this.coinCollection = coinCollection;
-    }
 }

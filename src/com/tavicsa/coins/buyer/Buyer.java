@@ -1,10 +1,7 @@
-package com.tavicsa.coins;
+package com.tavicsa.coins.buyer;
 
 public class Buyer {
     String name;
-
-    public Buyer() {
-    }
 
     public Buyer(String name) {
         this.name = name;
@@ -16,10 +13,4 @@ public class Buyer {
                 "name='" + name + '\'' +
                 '}';
     }
-//
-//    public Auction raiseBid() {
-////        auction.setHighestBid(newBidValue);
-////        auction.getBidHistory().put(this.name,newBidValue);
-////        return auction;
-//    }
 }

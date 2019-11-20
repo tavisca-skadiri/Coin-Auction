@@ -1,4 +1,6 @@
-package com.tavicsa.coins;
+package com.tavicsa.coins.board;
+
+import com.tavicsa.coins.Coin;
 
 import java.util.ArrayList;
 import java.util.Comparator;
